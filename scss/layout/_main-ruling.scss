@@ -1,0 +1,107 @@
+.main-ruling {
+  height: 100vh;
+  background-image: url('../img/Pope.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__vote-card {
+    width: 35vw;
+    z-index: 2;
+    position: absolute;
+    margin-left: 8.4em;
+    margin-top: 10.6em;
+
+    &__content {
+      height: 370px;
+
+      -webkit-backdrop-filter: blur(25px);
+      backdrop-filter: blur(25px);
+      background-color: rgb(0, 0, 0, 0.4);
+
+      color: white;
+      padding: 12px 40px;
+      font-weight: 300;
+      &__title {
+        font-size: 1em;
+        margin-bottom: 0;
+      }
+      &__name {
+        font-size: 3.75em;
+        margin: 0;
+        font-weight: 400;
+      }
+      &__desc {
+        font-size: 1.3em;
+      }
+      &__more-info {
+        & * {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 0.875em;
+          color: white;
+        }
+
+        &__icon--white {
+          fill: white;
+        }
+      }
+      &__verdict {
+        line-height: 4;
+        font-size: 1.25em;
+        font-weight: bold;
+      }
+    }
+
+    &__thumbs-row {
+      display: flex;
+      flex-direction: row;
+
+      &__thumb {
+        width: 50%;
+        padding: 1.2em 0;
+        text-align: center;
+        cursor: pointer;
+        &--up {
+          background-color: rgba(28, 187, 180, 0.902);
+        }
+        &--down {
+          background-color: rgba(255, 173, 29, 0.902); // height: 100%;
+        }
+        &__icon {
+          fill: white;
+        }
+      }
+    }
+  }
+  &__closing {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    &__left {
+      width: 33%;
+      background-color: rgba(112, 112, 112, 0.302);
+      line-height: 50px;
+      color: rgb(255, 255, 255);
+      text-align: right;
+      padding-right: 1em;
+    }
+    &__right {
+      width: 67%;
+      background-color: rgba(255, 255, 255, 0.702);
+      font-size: 2em;
+      color: rgb(70, 70, 70);
+      line-height: 50px;
+      &--thin {
+        font-weight: 300;
+      }
+      &__triangle {
+        display: inline-block;
+        vertical-align: middle;
+        border-top: 5px solid transparent;
+        border-left: 10px solid rgba(112, 112, 112, 0.5);
+        border-bottom: 5px solid transparent;
+      }
+    }
+  }
+}

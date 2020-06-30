@@ -1,0 +1,15 @@
+@import 'utils/mixins';
+@import 'utils/variables';
+@import 'layout/navbar';
+@import 'layout/main-ruling';
+@import 'layout/previous-rulings';
+body,
+html {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
