@@ -1,0 +1,166 @@
+.container {
+  margin: 5vh 10vw;
+}
+.message {
+  max-height: 100px;
+  display: flex;
+  padding: 1.5em;
+  background-color: rgb(235, 235, 235);
+  justify-content: space-evenly;
+  align-items: center;
+  &__medium {
+    font-size: 1.2em;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    margin: 0;
+  }
+  &__large {
+    font-size: 2em;
+
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.131;
+    margin: 0;
+  }
+}
+
+.previous-rulings {
+  font-size: 2em;
+
+  &__card-grid {
+    width: 986px;
+    height: 1100px;
+    display: grid;
+    grid-template-columns: 492px 492px;
+    grid-row: auto auto;
+    grid-column-gap: 42px;
+    grid-row-gap: 42px;
+  }
+
+  &__hero {
+    width: 492px;
+    height: 550px;
+    position: relative;
+    img {
+      position: absolute;
+    }
+    &__dark-overlay {
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+
+      background-image: -moz-linear-gradient(
+        270deg,
+        rgba(51, 51, 51, 0) 0%,
+        rgba(51, 51, 51, 0.52941) 49%,
+        rgba(51, 51, 51, 0.81961) 100%
+      );
+      background-image: -webkit-linear-gradient(
+        270deg,
+        rgba(51, 51, 51, 0) 0%,
+        rgba(51, 51, 51, 0.52941) 49%,
+        rgba(51, 51, 51, 0.81961) 100%
+      );
+      background-image: -ms-linear-gradient(
+        270deg,
+        rgba(51, 51, 51, 0) 0%,
+        rgba(51, 51, 51, 0.52941) 49%,
+        rgba(51, 51, 51, 0.81961) 100%
+      );
+    }
+    &__content {
+      z-index: 3;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      * {
+        color: white;
+      }
+
+      &__vote-result {
+        padding: 2%;
+        font-size: 0.8em;
+        display: flex;
+        align-items: center;
+        &--up {
+          width: 64%;
+          background-color: rgba(28, 187, 180, 0.702);
+        }
+        &--down {
+          width: 36%;
+          background-color: rgba(255, 173, 29, 0.702);
+          text-align: right;
+          justify-content: flex-end;
+        }
+      }
+
+      &__vote-btn {
+        border: 1px solid white;
+        background-color: transparent;
+        padding: 0.7em 1.5em;
+      }
+    }
+  }
+}
+
+.vote {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.3em;
+
+  &--up {
+    background-color: rgba(28, 187, 180);
+  }
+  &--down {
+    background-color: rgba(255, 173, 29);
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.center-vertical {
+  align-items: center;
+}
+
+.no-margin-padding {
+  padding: 0;
+  margin: 0;
+}
+
+.big-title {
+  font-size: 1.5em;
+  line-height: 1.067;
+  font-weight: 400;
+}
+
+.paragraph {
+  font-size: 0.5em;
+  line-height: 1.2;
+}
+
+.small-subtitle {
+  font-size: 0.4em;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bottom-margin {
+  margin-bottom: 3vh;
+}
+
+.margin-right {
+  margin-right: 1vw;
+}
+
+.margin-left {
+  margin-left: 1vw;
+}
