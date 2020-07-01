@@ -61,9 +61,8 @@
   }
 
   &__hamburger {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+    @extend .transparent-button;
+
     display: none;
 
     @include screen-size('phone') {

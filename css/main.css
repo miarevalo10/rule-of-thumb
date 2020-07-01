@@ -44,9 +44,6 @@
   }
 }
 .nav-bar__hamburger {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
   display: none;
 }
 @media (max-width: 480px) {
@@ -132,6 +129,7 @@
   width: 50%;
   padding: 20px 0;
   text-align: center;
+  border: none;
   cursor: pointer;
 }
 .vote-card__thumb--up {
@@ -291,6 +289,7 @@
   justify-content: center;
   margin-right: 13px;
   cursor: pointer;
+  border: none;
 }
 .hero__vote--left-marker {
   position: absolute;
@@ -497,6 +496,12 @@ html {
 .svg-assets {
   width: 0;
   height: 0;
+}
+
+.transparent-button, .nav-bar__hamburger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

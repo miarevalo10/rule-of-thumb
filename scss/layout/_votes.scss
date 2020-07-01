@@ -50,8 +50,7 @@
     max-width: 100%;
     display: grid;
     grid-template-columns: 48% 48%;
-    // grid-column-gap: 42px;
-    // grid-row-gap: 42px;
+
     grid-column-gap: 42px;
     grid-row-gap: 42px;
     @include screen-size('phone') {
@@ -136,6 +135,7 @@
     justify-content: center;
     margin-right: 13px;
     cursor: pointer;
+    border: none;
 
     &--left-marker {
       position: absolute;
