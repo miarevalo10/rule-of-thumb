@@ -1,0 +1,124 @@
+@import 'src/styles/utils/variables';
+@import 'src/styles/utils/mixins';
+@import 'src/styles/global';
+
+.main-ruling {
+  height: 100vh;
+  background-image: url('src/assets/Pope.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.vote-card {
+  @extend .horizontal-margin;
+  width: 500px;
+  color: white;
+  position: absolute;
+  margin-top: 155px;
+
+  @include screen-size('phone') {
+    width: 420px;
+    margin-top: 120px;
+  }
+
+  &__content {
+    -moz-webkit-backdrop-filter: blur(25px);
+    -ms-webkit-backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    background-color: rgb(0, 0, 0, 0.4);
+
+    padding: 0 72px 15px 40px;
+    font-weight: 300;
+    @include screen-size('phone') {
+      padding-right: 18px;
+    }
+  }
+
+  &__title {
+    padding-top: 50px;
+    &--name {
+      font-size: 3.75rem;
+      font-weight: 400;
+      @include screen-size('phone') {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+  &__desc {
+    font-size: 1.3rem;
+    line-height: 1.143;
+  }
+
+  &__more-info {
+    & * {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0.875rem;
+      line-height: 1.714;
+      color: white;
+    }
+  }
+
+  &__verdict {
+    line-height: 1.2;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  &__thumb {
+    width: 50%;
+    padding: 20px 0;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+    &--up {
+      background-color: rgba(28, 187, 180, 0.902);
+    }
+    &--down {
+      background-color: rgba(255, 173, 29, 0.902);
+    }
+  }
+}
+
+.closing {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+
+  &__left {
+    width: 33%;
+    background-color: rgba(112, 112, 112, 0.302);
+    line-height: 50px;
+    text-align: right;
+    padding-right: 1em;
+    color: white;
+  }
+
+  &__right {
+    width: 67%;
+    background-color: rgba(255, 255, 255, 0.702);
+    font-size: 2rem;
+    line-height: 50px;
+    color: $dark-grey;
+
+    &--bold {
+      font-weight: 400;
+      color: $dark-grey;
+    }
+  }
+
+  &__triangle {
+    display: inline-block;
+    vertical-align: middle;
+    border-top: 5px solid transparent;
+    border-left: 10px solid rgba(112, 112, 112, 0.5);
+    border-bottom: 5px solid transparent;
+  }
+}
