@@ -8,3 +8,21 @@
       + "#{map-keys($breakpoints)}";
   }
 }
+
+@mixin percentage-bar($percentage, $up: true) {
+  width: $percentage;
+
+  @if $up {
+    background-color: rgba(28, 187, 180, 0.702);
+    & > svg {
+      margin-right: 6px;
+    }
+  } @else {
+    background-color: rgba(255, 173, 29, 0.702);
+    text-align: right;
+    justify-content: flex-end;
+    & > svg {
+      margin-left: 6px;
+    }
+  }
+}

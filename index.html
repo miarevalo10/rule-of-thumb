@@ -17,26 +17,20 @@
     <header class="nav-bar">
       <nav class="nav-bar__container">
         <div>
-          <a class="nav-bar__container__logo" href="#">Rule of Thumb.</a>
+          <a class="nav-bar__logo" href="#">Rule of Thumb.</a>
         </div>
-        <ul class="nav-bar__container__menu">
-          <li class="nav-bar__container__menu-item">
-            <a class="nav-bar__container__menu-item__link" href="#"
-              >Past trials</a
-            >
+        <ul class="nav-bar__menu">
+          <li class="nav-bar__menu-item">
+            <a class="nav-bar__menu-item-link" href="#">Past trials</a>
           </li>
-          <li class="nav-bar__container__menu-item">
-            <a class="nav-bar__container__menu-item__link" href="#"
-              >How It Works</a
-            >
+          <li class="nav-bar__menu-item">
+            <a class="nav-bar__menu-item-link" href="#">How It Works</a>
           </li>
-          <li class="nav-bar__container__menu-item">
-            <a class="nav-bar__container__menu-item__link" href="#"
-              >Log In / Sign Up</a
-            >
+          <li class="nav-bar__menu-item">
+            <a class="nav-bar__menu-item-link" href="#">Log In / Sign Up</a>
           </li>
-          <li class="nav-bar__container__menu-item">
-            <a class="nav-bar__container__menu-item__link" href="#">
+          <li class="nav-bar__menu-item">
+            <a class="nav-bar__menu-item-link" href="#">
               <svg width="18px" height="18px">
                 <use xlink:href="#search"></use>
               </svg>
@@ -47,21 +41,19 @@
     </header>
 
     <section class="main-ruling">
-      <article class="main-ruling__vote-card">
-        <div class="main-ruling__vote-card__content">
-          <p class="main-ruling__vote-card__content__title">
+      <article class="vote-card">
+        <div class="vote-card__content">
+          <p class="vote-card__title">
             What's your opinion on
             <br />
-            <span class="main-ruling__vote-card__content__title--name"
-              >Pope Francis?</span
-            >
+            <span class="vote-card__title--name">Pope Francis?</span>
           </p>
-          <p class="main-ruling__vote-card__content__desc">
+          <p class="vote-card__desc">
             He's talking tough on clergy sexual abuse, but is he just another
             papal pervert protector? (thumbs down) or a true pedophile punishing
             pontiff? (thumbs up)
           </p>
-          <div class="main-ruling__vote-card__content__more-info">
+          <div class="vote-card__more-info">
             <svg width="16px" height="16px" preserveAspectRatio="xMinYMax meet">
               <use xlink:href="#wikipedia"></use>
             </svg>
@@ -70,28 +62,28 @@
             </a>
           </div>
           <br />
-          <p class="main-ruling__vote-card__content__verdict">
+          <p class="vote-card__verdict">
             What's Your Verdict?
           </p>
         </div>
-        <div class="main-ruling__vote-card__thumbs-row">
-          <btn class="main-ruling__vote-card__thumbs-row__thumb--up">
+        <div class="flex-row">
+          <btn class="vote-card__thumb vote-card__thumb--up">
             <svg height="39px" width="39px">
               <use xlink:href="#thumb-up"></use>
             </svg>
           </btn>
-          <btn class="main-ruling__vote-card__thumbs-row__thumb--down">
+          <btn class="vote-card__thumb vote-card__thumb--down">
             <svg height="39px" width="39px">
               <use xlink:href="#thumb-down"></use>
             </svg>
           </btn>
         </div>
       </article>
-      <div class="main-ruling__closing">
-        <div class="main-ruling__closing__left">CLOSING IN</div>
-        <div class="main-ruling__closing__right">
-          <div class="main-ruling__closing__right__triangle"></div>
-          <span class="main-ruling__closing__right--bold">22 </span> days
+      <div class="closing">
+        <div class="closing__left">CLOSING IN</div>
+        <div class="closing__right">
+          <div class="closing__triangle"></div>
+          <span class="closing__right--bold">22 </span> days
         </div>
       </div>
     </section>
@@ -118,59 +110,55 @@
     <section class="votes">
       <p class="votes__title">Votes</p>
       <div class="votes__card-grid">
-        <article class="votes__hero">
-          <img src="img/Kanye.png" alt="" />
-          <div class="votes__hero__content">
-            <div class="flex-row bottom-margin">
-              <div class="vote vote--up">
-                <svg height="18px" width="18px">
-                  <use xlink:href="#thumb-up"></use>
-                </svg>
-              </div>
-              <div>
-                <h1 class="votes__hero__content__big-title">
-                  Kanye West
-                </h1>
-                <h2
-                  class="no-margin-padding votes__hero__content__small-subtitle"
+        <article class="hero">
+          <img class="hero__image" src="img/Kanye.png" alt="" />
+          <div class="hero__content">
+            <div class="hero__vote hero__vote--left-marker hero__vote--up">
+              <svg height="18px" width="18px">
+                <use xlink:href="#thumb-up"></use>
+              </svg>
+            </div>
+            <div style="padding: 41px;">
+              <h1 class="hero__big-title">
+                Kanye West
+              </h1>
+              <h2 class="no-margin-padding hero__small-subtitle">
+                1 month ago<span class="weight--regular">
+                  in Entertainment</span
                 >
-                  1 month ago<span class="weight--regular">
-                    in Entertainment</span
-                  >
-                </h2>
-                <p class="votes__hero__content__paragraph">
-                  Vestibulum diam ante, porttitor a odio eget, rhoncus neque.
-                  Aenean eu velit libero.
-                </p>
-                <div class="flex-row center-vertical">
-                  <btn class="vote--up vote--selected">
-                    <svg height="18px" width="18px">
-                      <use xlink:href="#thumb-up"></use>
-                    </svg>
-                  </btn>
+              </h2>
+              <p class="hero__paragraph">
+                Vestibulum diam ante, porttitor a odio eget, rhoncus neque.
+                Aenean eu velit libero.
+              </p>
+              <div class="flex-row center-vertical">
+                <btn class="hero__vote hero__vote--up hero__vote--selected">
+                  <svg height="18px" width="18px">
+                    <use xlink:href="#thumb-up"></use>
+                  </svg>
+                </btn>
 
-                  <btn class="vote--down">
-                    <svg height="18px" width="18px">
-                      <use xlink:href="#thumb-down"></use>
-                    </svg>
-                  </btn>
-                  <button class="votes__hero__content__vote-btn">
-                    Vote now
-                  </button>
-                </div>
+                <btn class="hero__vote hero__vote--down">
+                  <svg height="18px" width="18px">
+                    <use xlink:href="#thumb-down"></use>
+                  </svg>
+                </btn>
+                <button class="hero__vote-btn">
+                  Vote now
+                </button>
               </div>
             </div>
 
             <div class="flex-row">
-              <div class="votes__hero__content__vote-result--up">
-                <svg class="margin-right" height="28px" width="28px">
+              <div class="hero__vote-result hero__vote-result--up">
+                <svg height="28px" width="28px">
                   <use xlink:href="#thumb-up"></use>
                 </svg>
                 64%
               </div>
-              <div class="votes__hero__content__vote-result--down">
+              <div class="hero__vote-result hero__vote-result--down">
                 36%
-                <svg class="margin-left" height="28px" width="28px">
+                <svg height="28px" width="28px">
                   <use xlink:href="#thumb-down"></use>
                 </svg>
               </div>
