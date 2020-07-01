@@ -8,10 +8,12 @@
   color: $dark-grey;
   padding-top: 8px;
 
+  @include screen-size('phone') {
+    padding-top: 4px;
+  }
+
   &__list {
     @extend .flex-row;
-
-    display: flex;
     padding-left: 0;
     align-items: center;
   }
@@ -23,6 +25,9 @@
     margin-right: 28px;
     &:last-child {
       margin-right: 0;
+    }
+    @include screen-size('phone') {
+      margin-right: 12px;
     }
   }
 

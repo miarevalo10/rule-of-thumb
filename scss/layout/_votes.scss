@@ -49,9 +49,20 @@
   &__card-grid {
     max-width: 100%;
     display: grid;
-    grid-template-columns: 492px 492px;
+    grid-template-columns: 48% 48%;
+    // grid-column-gap: 42px;
+    // grid-row-gap: 42px;
     grid-column-gap: 42px;
     grid-row-gap: 42px;
+    @include screen-size('phone') {
+      grid-template-columns: 100%;
+    }
+    @include screen-size('tablet') {
+      grid-template-columns: 100%;
+    }
+    @include screen-size('laptop') {
+      grid-template-columns: 100%;
+    }
   }
 }
 
@@ -60,6 +71,28 @@
   height: 550px;
   position: relative;
   color: white;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+
+  @include screen-size('phone') {
+    height: 500px;
+  }
+
+  &--kanye {
+    background-image: url('../img/Kanye.png');
+  }
+  &--mark {
+    background-image: url('../img/Mark.png');
+  }
+  &--cristina {
+    background-image: url('../img/Cristina.png');
+  }
+  &--malala {
+    background-image: url('../img/Malala.png');
+    background-position: center;
+  }
 
   &::after {
     z-index: 2;
@@ -86,12 +119,6 @@
       rgba(51, 51, 51, 0.52941) 49%,
       rgba(51, 51, 51, 0.81961) 100%
     );
-  }
-
-  &__image {
-    position: absolute;
-    max-width: 100%;
-    height: auto;
   }
 
   &__container {
@@ -182,50 +209,5 @@
     color: white;
     cursor: pointer;
     font-size: 0.875rem;
-  }
-}
-
-.submit-name {
-  @extend .horizontal-margin;
-  margin-top: 34px;
-  margin-bottom: 40px;
-
-  // width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-
-  background-image: url('../img/Layer4.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-
-  &::after {
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    content: '';
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-
-  &__text {
-    z-index: 3;
-    font-size: 1.875rem;
-    color: $dark-grey;
-    line-height: 0.8;
-    margin-left: 20px;
-  }
-  &__btn {
-    z-index: 3;
-    border: 3px solid $dark-grey;
-    height: 54px;
-    background-color: transparent;
-    padding: 0 2.5rem;
-    color: $dark-grey;
-    cursor: pointer;
-    font-size: 1.25rem;
-    margin-right: 20px;
   }
 }

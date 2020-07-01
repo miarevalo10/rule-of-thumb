@@ -1,10 +1,12 @@
 @import 'utils/mixins';
 @import 'utils/variables';
+@import 'utils/mixins';
+
 @import 'layout/navbar';
 @import 'layout/main-ruling';
 @import 'layout/votes';
+@import 'layout/submit-name';
 @import 'layout/footer';
-@import 'utils/mixins';
 
 body,
 html {
@@ -30,8 +32,20 @@ html {
 }
 
 .horizontal-margin {
-  margin-left: 8.3rem;
-  margin-right: 7.68rem;
+  margin-left: 133px;
+  margin-right: 122px;
+  @include screen-size('phone') {
+    margin-left: 30px;
+    margin-right: 28px;
+  }
+  @include screen-size('tablet') {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  // @include screen-size('laptop') {
+  //   margin-left: 110px;
+  //   margin-right: 100px;
+  // }
 }
 
 .flex-row {

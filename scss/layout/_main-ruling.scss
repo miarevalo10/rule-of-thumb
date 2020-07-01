@@ -3,7 +3,7 @@
   background-image: url('../img/Pope.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  // background-position: center center;
+  background-position: center center;
 }
 
 .vote-card {
@@ -14,6 +14,11 @@
   position: absolute;
   color: white;
 
+  @include screen-size('phone') {
+    width: 420px;
+    margin-top: 120px;
+  }
+
   &__content {
     -moz-webkit-backdrop-filter: blur(25px);
     -ms-webkit-backdrop-filter: blur(25px);
@@ -23,6 +28,9 @@
 
     padding: 0 72px 15px 40px;
     font-weight: 300;
+    @include screen-size('phone') {
+      padding-right: 18px;
+    }
   }
 
   &__title {
@@ -30,6 +38,9 @@
     &--name {
       font-size: 3.75rem;
       font-weight: 400;
+      @include screen-size('phone') {
+        font-size: 3.2rem;
+      }
     }
   }
 
