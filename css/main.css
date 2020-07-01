@@ -36,7 +36,7 @@
 
 .main-ruling {
   height: 100vh;
-  background-image: url("../img/Pope.png");
+  background-image: url("../img/Pope.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -159,6 +159,11 @@
   line-height: 1.515;
   color: #333333;
 }
+.message__close-btn {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
 
 .votes {
   font-size: 2rem;
@@ -196,7 +201,7 @@
 .hero__image {
   position: absolute;
 }
-.hero__content {
+.hero__container {
   z-index: 3;
   width: 100%;
   position: absolute;
@@ -213,7 +218,7 @@
 }
 .hero__vote--left-marker {
   position: absolute;
-  bottom: 225px;
+  bottom: 220px;
 }
 .hero__vote--up {
   background-color: #1cbbb4;
@@ -224,32 +229,39 @@
 .hero__vote--selected {
   border: 1px solid white;
 }
+.hero__content {
+  padding: 41px;
+}
 .hero__big-title {
-  font-size: 1.5em;
+  font-size: 2.8rem;
   line-height: 1.067;
 }
 .hero__paragraph {
-  font-size: 0.5em;
+  font-size: 1rem;
   line-height: 1.2;
 }
 .hero__small-subtitle {
-  font-size: 0.4em;
+  font-size: 0.75rem;
 }
 .hero__vote-result {
   padding: 2%;
-  font-size: 0.8em;
+  font-size: 1.25rem;
   display: flex;
   align-items: center;
 }
-.hero__vote-result--up {
+.hero__vote-result--width-64 {
   width: 64%;
+}
+.hero__vote-result--width-36 {
+  width: 36%;
+}
+.hero__vote-result--up {
   background-color: rgba(28, 187, 180, 0.702);
 }
 .hero__vote-result--up > svg {
   margin-right: 6px;
 }
 .hero__vote-result--down {
-  width: 36%;
   background-color: rgba(255, 173, 29, 0.702);
   text-align: right;
   justify-content: flex-end;
@@ -262,6 +274,8 @@
   background-color: transparent;
   padding: 0.7rem 1.5rem;
   color: white;
+  cursor: pointer;
+  font-size: 0.875rem;
 }
 
 body,
