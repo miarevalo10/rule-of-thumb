@@ -1,5 +1,7 @@
 $breakpoints: (
-  'phone': 599px,
-  'desktop': 599px
+  'phone': 480px,
+  'tablet': 768px,
+  'laptop': 960px,
+  'desktop': 1200px
 ) !default;
-$black: #333333;
+$dark-grey: #333333;

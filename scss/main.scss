@@ -2,7 +2,10 @@
 @import 'utils/variables';
 @import 'layout/navbar';
 @import 'layout/main-ruling';
-@import 'layout/previous-rulings';
+@import 'layout/votes';
+@import 'layout/footer';
+@import 'utils/mixins';
+
 body,
 html {
   margin: 0;
@@ -10,7 +13,7 @@ html {
   height: 100%;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  color: $black;
+  color: $dark-grey;
 }
 
 .icon--white {
@@ -27,8 +30,8 @@ html {
 }
 
 .horizontal-margin {
-  margin-left: 133px;
-  margin-right: 123px;
+  margin-left: 8.3rem;
+  margin-right: 7.68rem;
 }
 
 .flex-row {
@@ -43,4 +46,9 @@ html {
 .no-margin-padding {
   padding: 0;
   margin: 0;
+}
+
+.svg-assets {
+  width: 0;
+  height: 0;
 }

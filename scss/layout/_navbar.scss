@@ -48,9 +48,6 @@
       color: white;
       text-decoration: none;
       line-height: 1.2;
-      @include screen-size('phone') {
-        display: none;
-      }
     }
   }
 }
