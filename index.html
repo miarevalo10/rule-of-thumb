@@ -8,60 +8,39 @@
 
     <link rel="stylesheet" href="css/main.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
-    <header>
-      <nav class="nav-bar">
-        <ul class="nav-bar__container">
-          <li class="nav-bar__container__menu-item" style="flex-grow: 1;">
-            <a class="nav-bar__container__logo" href="">Rule of Thumb.</a>
+    <header class="nav-bar">
+      <nav class="nav-bar__container">
+        <div>
+          <a class="nav-bar__container__logo" href="#">Rule of Thumb.</a>
+        </div>
+        <ul class="nav-bar__container__menu">
+          <li class="nav-bar__container__menu-item">
+            <a class="nav-bar__container__menu-item__link" href="#"
+              >Past trials</a
+            >
           </li>
-          <li
-            class="nav-bar__container__menu-item nav-bar__container__menu-item--right-menu"
-          >
-            <ul>
-              <li class="nav-bar__container__menu-item">
-                <a class="nav-bar__container__menu-item__link" href=""
-                  >Past trials</a
-                >
-              </li>
-              <li class="nav-bar__container__menu-item">
-                <a class="nav-bar__container__menu-item__link" href=""
-                  >How It Works</a
-                >
-              </li>
-              <li class="nav-bar__container__menu-item">
-                <a class="nav-bar__container__menu-item__link" href=""
-                  >Log In / Sign Up</a
-                >
-              </li>
-              <li class="nav-bar__container__menu-item">
-                <a class="nav-bar__container__menu-item__link" href="">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 512 512"
-                    style="enable-background: new 0 0 512 512;"
-                    xml:space="preserve"
-                    width="18px"
-                    height="18px"
-                  >
-                    <path
-                      class="icon--white"
-                      d="M508.875,493.792L353.089,338.005c32.358-35.927,52.245-83.296,52.245-135.339C405.333,90.917,314.417,0,202.667,0
-                                  S0,90.917,0,202.667s90.917,202.667,202.667,202.667c52.043,0,99.411-19.887,135.339-52.245l155.786,155.786
-                                  c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125C513.042,504.708,513.042,497.958,508.875,493.792z
-                                   M202.667,384c-99.979,0-181.333-81.344-181.333-181.333S102.688,21.333,202.667,21.333S384,102.677,384,202.667
-                                  S302.646,384,202.667,384z"
-                    />
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <li class="nav-bar__container__menu-item">
+            <a class="nav-bar__container__menu-item__link" href="#"
+              >How It Works</a
+            >
+          </li>
+          <li class="nav-bar__container__menu-item">
+            <a class="nav-bar__container__menu-item__link" href="#"
+              >Log In / Sign Up</a
+            >
+          </li>
+          <li class="nav-bar__container__menu-item">
+            <a class="nav-bar__container__menu-item__link" href="#">
+              <svg width="18px" height="18px">
+                <use xlink:href="#search"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </nav>
@@ -72,89 +51,40 @@
         <div class="main-ruling__vote-card__content">
           <p class="main-ruling__vote-card__content__title">
             What's your opinion on
+            <br />
+            <span class="main-ruling__vote-card__content__title--name"
+              >Pope Francis?</span
+            >
           </p>
-          <p class="main-ruling__vote-card__content__name">Pope Francis?</p>
           <p class="main-ruling__vote-card__content__desc">
             He's talking tough on clergy sexual abuse, but is he just another
             papal pervert protector? (thumbs down) or a true pedophile punishing
             pontiff? (thumbs up)
           </p>
           <div class="main-ruling__vote-card__content__more-info">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 458.723 458.723"
-              xml:space="preserve"
-              width="16px"
-              height="16px"
-              preserveAspectRatio="xMinYMax meet"
-            >
-              <path
-                class="icon--white"
-                d="M455.724,93.489H367.32h-3v3v9.613v3h3h6.143c7.145,0,13.588,3.667,17.237,9.81
-         c3.648,6.143,3.786,13.555,0.368,19.829l-98.3,180.432l-44.769-106.727l42.169-77.382c8.727-16.014,25.477-25.962,43.714-25.962
-         h1.992h3v-3v-9.613v-3h-3H247.47h-3v3v9.613v3h3h6.143c7.145,0,13.588,3.667,17.237,9.81c3.648,6.143,3.786,13.555,0.368,19.829
-         l-30.587,56.143L213.372,129.9c-1.976-4.71-1.487-9.852,1.341-14.105s7.38-6.693,12.488-6.693h6.988h3v-3v-9.613v-3h-3H128.46h-3v3
-         v9.613v3h3h1.454c20.857,0,39.546,12.428,47.615,31.661l40.277,96.018l-44.887,82.392L93.523,129.9
-         c-1.976-4.71-1.487-9.852,1.341-14.105s7.38-6.693,12.488-6.693h10.737h3v-3v-9.613v-3h-3H3H0v3v9.613v3h3h7.064
-         c20.857,0,39.547,12.428,47.615,31.661l91.526,218.191c1.601,3.816,5.313,6.282,9.458,6.282c3.804,0,7.163-1.998,8.986-5.344
-         l11.939-21.91l45.582-83.646l43.884,104.617c1.601,3.816,5.313,6.282,9.458,6.282c3.804,0,7.163-1.998,8.986-5.344l11.939-21.91
-         l110.58-202.919c8.727-16.014,25.477-25.962,43.714-25.962h1.992h3v-3v-9.613v-3h-2.999L455.724,93.489L455.724,93.489z"
-              />
+            <svg width="16px" height="16px" preserveAspectRatio="xMinYMax meet">
+              <use xlink:href="#wikipedia"></use>
             </svg>
             <a href="#">
               More information
             </a>
           </div>
-
+          <br />
           <p class="main-ruling__vote-card__content__verdict">
             What's Your Verdict?
           </p>
         </div>
         <div class="main-ruling__vote-card__thumbs-row">
-          <div
-            class="main-ruling__vote-card__thumbs-row__thumb main-ruling__vote-card__thumbs-row__thumb--up"
-          >
-            <svg
-              height="39px"
-              viewBox="0 0 16 16"
-              width="39px"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                class="icon--white"
-                d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
-                transform="translate(0 5)"
-              />
-              <path
-                class="icon--white"
-                d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
-                transform="translate(5 .97)"
-              />
+          <btn class="main-ruling__vote-card__thumbs-row__thumb--up">
+            <svg height="39px" width="39px">
+              <use xlink:href="#thumb-up"></use>
             </svg>
-          </div>
-          <div
-            class="main-ruling__vote-card__thumbs-row__thumb main-ruling__vote-card__thumbs-row__thumb--down"
-          >
-            <svg
-              enable-background="new 0 0 24 24"
-              height="39px"
-              viewBox="0 0 24 24"
-              width="39px"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                class="icon--white"
-                d="m22.25 1h-2.5c-.965 0-1.75.785-1.75 1.75v11.5c0 .965.785 1.75 1.75 1.75h2.5c.965 0 1.75-.785 1.75-1.75v-11.5c0-.965-.785-1.75-1.75-1.75z"
-              />
-              <path
-                class="icon--white"
-                d="m5.119.75c-1.95 0-3.61 1.4-3.94 3.32l-1.12 6.5c-.42 2.45 1.46 4.68 3.94 4.68h4.72s-.75 1.5-.75 4c0 3 2.25 4 3.25 4s1.5-.5 1.5-3c0-2.376 2.301-4.288 3.781-5.273v-12.388c-1.601-.741-4.806-1.839-9.781-1.839z"
-              />
+          </btn>
+          <btn class="main-ruling__vote-card__thumbs-row__thumb--down">
+            <svg height="39px" width="39px">
+              <use xlink:href="#thumb-down"></use>
             </svg>
-          </div>
+          </btn>
         </div>
       </article>
       <div class="main-ruling__closing">
@@ -166,115 +96,65 @@
       </div>
     </section>
 
-    <section class="message container">
-      <div style="flex-grow: 2;">
+    <section class="message">
+      <div>
         <h2 class="message__medium">
-          Speak out. Be heard
+          Speak out. Be heard.
         </h2>
         <h1 class="message__large">Be counted</h1>
       </div>
-      <div>
+      <div class="message__description">
         Rule of Thumb is a crowd sourced court of public opinion where anyone
         and everyone can speak out and speak freely. It's easy: You share your
         opinion, we analyze and out the data in a public report.
       </div>
       <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 512.001 512.001"
-          style="enable-background: new 0 0 512.001 512.001;"
-          xml:space="preserve"
-          width="16px"
-          height="16px"
-        >
-          <path
-            d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
-			L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
-			c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
-			l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
-			L284.286,256.002z"
-          />
+        <svg width="16px" height="16px">
+          <use xlink:href="#close"></use>
         </svg>
       </div>
     </section>
-    <section class="previous-rulings container">
-      <h1>Previous rulings</h1>
-      <div class="previous-rulings__card-grid">
-        <article class="previous-rulings__hero">
+
+    <section class="votes">
+      <p class="votes__title">Votes</p>
+      <div class="votes__card-grid">
+        <article class="votes__hero">
           <img src="img/Kanye.png" alt="" />
-          <div class="previous-rulings__hero__dark-overlay"></div>
-          <div class="previous-rulings__hero__content">
+          <div class="votes__hero__content">
             <div class="flex-row bottom-margin">
               <div class="vote vote--up">
-                <svg
-                  height="18px"
-                  viewBox="0 0 16 16"
-                  width="18px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="icon--white"
-                    d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
-                    transform="translate(0 5)"
-                  />
-                  <path
-                    class="icon--white"
-                    d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
-                    transform="translate(5 .97)"
-                  />
+                <svg height="18px" width="18px">
+                  <use xlink:href="#thumb-up"></use>
                 </svg>
               </div>
               <div>
-                <h1 class="no-margin-padding big-title">Kanye West</h1>
-                <h2 class="no-margin-padding small-subtitle">
-                  <span class="bold">1 month ago</span> in Entertainment
+                <h1 class="votes__hero__content__big-title">
+                  Kanye West
+                </h1>
+                <h2
+                  class="no-margin-padding votes__hero__content__small-subtitle"
+                >
+                  1 month ago<span class="weight--regular">
+                    in Entertainment</span
+                  >
                 </h2>
-                <p class="paragraph">
+                <p class="votes__hero__content__paragraph">
                   Vestibulum diam ante, porttitor a odio eget, rhoncus neque.
                   Aenean eu velit libero.
                 </p>
                 <div class="flex-row center-vertical">
-                  <div class="vote vote--up">
-                    <svg
-                      height="18px"
-                      viewBox="0 0 16 16"
-                      width="18px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="icon--white"
-                        d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
-                        transform="translate(0 5)"
-                      />
-                      <path
-                        class="icon--white"
-                        d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
-                        transform="translate(5 .97)"
-                      />
+                  <btn class="vote--up vote--selected">
+                    <svg height="18px" width="18px">
+                      <use xlink:href="#thumb-up"></use>
                     </svg>
-                  </div>
-                  <div class="vote vote--down">
-                    <svg
-                      enable-background="new 0 0 24 24"
-                      height="18px"
-                      viewBox="0 0 24 24"
-                      width="18px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="icon--white"
-                        d="m22.25 1h-2.5c-.965 0-1.75.785-1.75 1.75v11.5c0 .965.785 1.75 1.75 1.75h2.5c.965 0 1.75-.785 1.75-1.75v-11.5c0-.965-.785-1.75-1.75-1.75z"
-                      />
-                      <path
-                        class="icon--white"
-                        d="m5.119.75c-1.95 0-3.61 1.4-3.94 3.32l-1.12 6.5c-.42 2.45 1.46 4.68 3.94 4.68h4.72s-.75 1.5-.75 4c0 3 2.25 4 3.25 4s1.5-.5 1.5-3c0-2.376 2.301-4.288 3.781-5.273v-12.388c-1.601-.741-4.806-1.839-9.781-1.839z"
-                      />
+                  </btn>
+
+                  <btn class="vote--down">
+                    <svg height="18px" width="18px">
+                      <use xlink:href="#thumb-down"></use>
                     </svg>
-                  </div>
-                  <button class="previous-rulings__hero__content__vote-btn">
+                  </btn>
+                  <button class="votes__hero__content__vote-btn">
                     Vote now
                   </button>
                 </div>
@@ -282,430 +162,16 @@
             </div>
 
             <div class="flex-row">
-              <div
-                class="previous-rulings__hero__content__vote-result previous-rulings__hero__content__vote-result--up"
-              >
-                <svg
-                  class="margin-right"
-                  height="28px"
-                  viewBox="0 0 16 16"
-                  width="28px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="icon--white"
-                    d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
-                    transform="translate(0 5)"
-                  />
-                  <path
-                    class="icon--white"
-                    d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
-                    transform="translate(5 .97)"
-                  />
+              <div class="votes__hero__content__vote-result--up">
+                <svg class="margin-right" height="28px" width="28px">
+                  <use xlink:href="#thumb-up"></use>
                 </svg>
                 64%
               </div>
-              <div
-                class="previous-rulings__hero__content__vote-result previous-rulings__hero__content__vote-result--down"
-              >
+              <div class="votes__hero__content__vote-result--down">
                 36%
-                <svg
-                  class="margin-left"
-                  enable-background="new 0 0 24 24"
-                  height="28px"
-                  viewBox="0 0 24 24"
-                  width="28px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="icon--white"
-                    d="m22.25 1h-2.5c-.965 0-1.75.785-1.75 1.75v11.5c0 .965.785 1.75 1.75 1.75h2.5c.965 0 1.75-.785 1.75-1.75v-11.5c0-.965-.785-1.75-1.75-1.75z"
-                  />
-                  <path
-                    class="icon--white"
-                    d="m5.119.75c-1.95 0-3.61 1.4-3.94 3.32l-1.12 6.5c-.42 2.45 1.46 4.68 3.94 4.68h4.72s-.75 1.5-.75 4c0 3 2.25 4 3.25 4s1.5-.5 1.5-3c0-2.376 2.301-4.288 3.781-5.273v-12.388c-1.601-.741-4.806-1.839-9.781-1.839z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="previous-rulings__hero">
-          <img src="img/Kanye.png" alt="" />
-          <div class="previous-rulings__hero__dark-overlay"></div>
-          <div class="previous-rulings__hero__content">
-            <div class="flex-row bottom-margin">
-              <div class="vote vote--up">
-                <svg
-                  height="18px"
-                  viewBox="0 0 16 16"
-                  width="18px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="icon--white"
-                    d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
-                    transform="translate(0 5)"
-                  />
-                  <path
-                    class="icon--white"
-                    d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
-                    transform="translate(5 .97)"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h1 class="no-margin-padding big-title">Kanye West</h1>
-                <h2 class="no-margin-padding small-subtitle">
-                  <span class="bold">1 month ago</span> in Entertainment
-                </h2>
-                <p class="paragraph">
-                  Vestibulum diam ante, porttitor a odio eget, rhoncus neque.
-                  Aenean eu velit libero.
-                </p>
-                <div class="flex-row center-vertical">
-                  <div class="vote vote--up">
-                    <svg
-                      height="18px"
-                      viewBox="0 0 16 16"
-                      width="18px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="icon--white"
-                        d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
-                        transform="translate(0 5)"
-                      />
-                      <path
-                        class="icon--white"
-                        d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
-                        transform="translate(5 .97)"
-                      />
-                    </svg>
-                  </div>
-                  <div class="vote vote--down">
-                    <svg
-                      enable-background="new 0 0 24 24"
-                      height="18px"
-                      viewBox="0 0 24 24"
-                      width="18px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="icon--white"
-                        d="m22.25 1h-2.5c-.965 0-1.75.785-1.75 1.75v11.5c0 .965.785 1.75 1.75 1.75h2.5c.965 0 1.75-.785 1.75-1.75v-11.5c0-.965-.785-1.75-1.75-1.75z"
-                      />
-                      <path
-                        class="icon--white"
-                        d="m5.119.75c-1.95 0-3.61 1.4-3.94 3.32l-1.12 6.5c-.42 2.45 1.46 4.68 3.94 4.68h4.72s-.75 1.5-.75 4c0 3 2.25 4 3.25 4s1.5-.5 1.5-3c0-2.376 2.301-4.288 3.781-5.273v-12.388c-1.601-.741-4.806-1.839-9.781-1.839z"
-                      />
-                    </svg>
-                  </div>
-                  <button class="previous-rulings__hero__content__vote-btn">
-                    Vote now
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex-row">
-              <div
-                class="previous-rulings__hero__content__vote-result previous-rulings__hero__content__vote-result--up"
-              >
-                <svg
-                  class="margin-right"
-                  height="28px"
-                  viewBox="0 0 16 16"
-                  width="28px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="icon--white"
-                    d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
-                    transform="translate(0 5)"
-                  />
-                  <path
-                    class="icon--white"
-                    d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
-                    transform="translate(5 .97)"
-                  />
-                </svg>
-                64%
-              </div>
-              <div
-                class="previous-rulings__hero__content__vote-result previous-rulings__hero__content__vote-result--down"
-              >
-                36%
-                <svg
-                  class="margin-left"
-                  enable-background="new 0 0 24 24"
-                  height="28px"
-                  viewBox="0 0 24 24"
-                  width="28px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="icon--white"
-                    d="m22.25 1h-2.5c-.965 0-1.75.785-1.75 1.75v11.5c0 .965.785 1.75 1.75 1.75h2.5c.965 0 1.75-.785 1.75-1.75v-11.5c0-.965-.785-1.75-1.75-1.75z"
-                  />
-                  <path
-                    class="icon--white"
-                    d="m5.119.75c-1.95 0-3.61 1.4-3.94 3.32l-1.12 6.5c-.42 2.45 1.46 4.68 3.94 4.68h4.72s-.75 1.5-.75 4c0 3 2.25 4 3.25 4s1.5-.5 1.5-3c0-2.376 2.301-4.288 3.781-5.273v-12.388c-1.601-.741-4.806-1.839-9.781-1.839z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="previous-rulings__hero">
-          <img src="img/Kanye.png" alt="" />
-          <div class="previous-rulings__hero__dark-overlay"></div>
-          <div class="previous-rulings__hero__content">
-            <div class="flex-row bottom-margin">
-              <div class="vote vote--up">
-                <svg
-                  height="18px"
-                  viewBox="0 0 16 16"
-                  width="18px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="icon--white"
-                    d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
-                    transform="translate(0 5)"
-                  />
-                  <path
-                    class="icon--white"
-                    d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
-                    transform="translate(5 .97)"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h1 class="no-margin-padding big-title">Kanye West</h1>
-                <h2 class="no-margin-padding small-subtitle">
-                  <span class="bold">1 month ago</span> in Entertainment
-                </h2>
-                <p class="paragraph">
-                  Vestibulum diam ante, porttitor a odio eget, rhoncus neque.
-                  Aenean eu velit libero.
-                </p>
-                <div class="flex-row center-vertical">
-                  <div class="vote vote--up">
-                    <svg
-                      height="18px"
-                      viewBox="0 0 16 16"
-                      width="18px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="icon--white"
-                        d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
-                        transform="translate(0 5)"
-                      />
-                      <path
-                        class="icon--white"
-                        d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
-                        transform="translate(5 .97)"
-                      />
-                    </svg>
-                  </div>
-                  <div class="vote vote--down">
-                    <svg
-                      enable-background="new 0 0 24 24"
-                      height="18px"
-                      viewBox="0 0 24 24"
-                      width="18px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="icon--white"
-                        d="m22.25 1h-2.5c-.965 0-1.75.785-1.75 1.75v11.5c0 .965.785 1.75 1.75 1.75h2.5c.965 0 1.75-.785 1.75-1.75v-11.5c0-.965-.785-1.75-1.75-1.75z"
-                      />
-                      <path
-                        class="icon--white"
-                        d="m5.119.75c-1.95 0-3.61 1.4-3.94 3.32l-1.12 6.5c-.42 2.45 1.46 4.68 3.94 4.68h4.72s-.75 1.5-.75 4c0 3 2.25 4 3.25 4s1.5-.5 1.5-3c0-2.376 2.301-4.288 3.781-5.273v-12.388c-1.601-.741-4.806-1.839-9.781-1.839z"
-                      />
-                    </svg>
-                  </div>
-                  <button class="previous-rulings__hero__content__vote-btn">
-                    Vote now
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex-row">
-              <div
-                class="previous-rulings__hero__content__vote-result previous-rulings__hero__content__vote-result--up"
-              >
-                <svg
-                  class="margin-right"
-                  height="28px"
-                  viewBox="0 0 16 16"
-                  width="28px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="icon--white"
-                    d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
-                    transform="translate(0 5)"
-                  />
-                  <path
-                    class="icon--white"
-                    d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
-                    transform="translate(5 .97)"
-                  />
-                </svg>
-                64%
-              </div>
-              <div
-                class="previous-rulings__hero__content__vote-result previous-rulings__hero__content__vote-result--down"
-              >
-                36%
-                <svg
-                  class="margin-left"
-                  enable-background="new 0 0 24 24"
-                  height="28px"
-                  viewBox="0 0 24 24"
-                  width="28px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="icon--white"
-                    d="m22.25 1h-2.5c-.965 0-1.75.785-1.75 1.75v11.5c0 .965.785 1.75 1.75 1.75h2.5c.965 0 1.75-.785 1.75-1.75v-11.5c0-.965-.785-1.75-1.75-1.75z"
-                  />
-                  <path
-                    class="icon--white"
-                    d="m5.119.75c-1.95 0-3.61 1.4-3.94 3.32l-1.12 6.5c-.42 2.45 1.46 4.68 3.94 4.68h4.72s-.75 1.5-.75 4c0 3 2.25 4 3.25 4s1.5-.5 1.5-3c0-2.376 2.301-4.288 3.781-5.273v-12.388c-1.601-.741-4.806-1.839-9.781-1.839z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="previous-rulings__hero">
-          <img src="img/Kanye.png" alt="" />
-          <div class="previous-rulings__hero__dark-overlay"></div>
-          <div class="previous-rulings__hero__content">
-            <div class="flex-row bottom-margin">
-              <div class="vote vote--up">
-                <svg
-                  height="18px"
-                  viewBox="0 0 16 16"
-                  width="18px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="icon--white"
-                    d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
-                    transform="translate(0 5)"
-                  />
-                  <path
-                    class="icon--white"
-                    d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
-                    transform="translate(5 .97)"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h1 class="no-margin-padding big-title">Kanye West</h1>
-                <h2 class="no-margin-padding small-subtitle">
-                  <span class="bold">1 month ago</span> in Entertainment
-                </h2>
-                <p class="paragraph">
-                  Vestibulum diam ante, porttitor a odio eget, rhoncus neque.
-                  Aenean eu velit libero.
-                </p>
-                <div class="flex-row center-vertical">
-                  <div class="vote vote--up">
-                    <svg
-                      height="18px"
-                      viewBox="0 0 16 16"
-                      width="18px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="icon--white"
-                        d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
-                        transform="translate(0 5)"
-                      />
-                      <path
-                        class="icon--white"
-                        d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
-                        transform="translate(5 .97)"
-                      />
-                    </svg>
-                  </div>
-                  <div class="vote vote--down">
-                    <svg
-                      enable-background="new 0 0 24 24"
-                      height="18px"
-                      viewBox="0 0 24 24"
-                      width="18px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="icon--white"
-                        d="m22.25 1h-2.5c-.965 0-1.75.785-1.75 1.75v11.5c0 .965.785 1.75 1.75 1.75h2.5c.965 0 1.75-.785 1.75-1.75v-11.5c0-.965-.785-1.75-1.75-1.75z"
-                      />
-                      <path
-                        class="icon--white"
-                        d="m5.119.75c-1.95 0-3.61 1.4-3.94 3.32l-1.12 6.5c-.42 2.45 1.46 4.68 3.94 4.68h4.72s-.75 1.5-.75 4c0 3 2.25 4 3.25 4s1.5-.5 1.5-3c0-2.376 2.301-4.288 3.781-5.273v-12.388c-1.601-.741-4.806-1.839-9.781-1.839z"
-                      />
-                    </svg>
-                  </div>
-                  <button class="previous-rulings__hero__content__vote-btn">
-                    Vote now
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex-row">
-              <div
-                class="previous-rulings__hero__content__vote-result previous-rulings__hero__content__vote-result--up"
-              >
-                <svg
-                  class="margin-right"
-                  height="28px"
-                  viewBox="0 0 16 16"
-                  width="28px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="icon--white"
-                    d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
-                    transform="translate(0 5)"
-                  />
-                  <path
-                    class="icon--white"
-                    d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
-                    transform="translate(5 .97)"
-                  />
-                </svg>
-                64%
-              </div>
-              <div
-                class="previous-rulings__hero__content__vote-result previous-rulings__hero__content__vote-result--down"
-              >
-                36%
-                <svg
-                  class="margin-left"
-                  enable-background="new 0 0 24 24"
-                  height="28px"
-                  viewBox="0 0 24 24"
-                  width="28px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="icon--white"
-                    d="m22.25 1h-2.5c-.965 0-1.75.785-1.75 1.75v11.5c0 .965.785 1.75 1.75 1.75h2.5c.965 0 1.75-.785 1.75-1.75v-11.5c0-.965-.785-1.75-1.75-1.75z"
-                  />
-                  <path
-                    class="icon--white"
-                    d="m5.119.75c-1.95 0-3.61 1.4-3.94 3.32l-1.12 6.5c-.42 2.45 1.46 4.68 3.94 4.68h4.72s-.75 1.5-.75 4c0 3 2.25 4 3.25 4s1.5-.5 1.5-3c0-2.376 2.301-4.288 3.781-5.273v-12.388c-1.601-.741-4.806-1.839-9.781-1.839z"
-                  />
+                <svg class="margin-left" height="28px" width="28px">
+                  <use xlink:href="#thumb-down"></use>
                 </svg>
               </div>
             </div>
@@ -713,5 +179,76 @@
         </article>
       </div>
     </section>
+    <footer></footer>
+    <svg
+      class="svg-assets"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <symbol id="search" viewBox="0 0 512 512" xml:space="preserve">
+        <path
+          class="icon--white"
+          d="M508.875,493.792L353.089,338.005c32.358-35.927,52.245-83.296,52.245-135.339C405.333,90.917,314.417,0,202.667,0
+                  S0,90.917,0,202.667s90.917,202.667,202.667,202.667c52.043,0,99.411-19.887,135.339-52.245l155.786,155.786
+                  c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125C513.042,504.708,513.042,497.958,508.875,493.792z
+                   M202.667,384c-99.979,0-181.333-81.344-181.333-181.333S102.688,21.333,202.667,21.333S384,102.677,384,202.667
+                  S302.646,384,202.667,384z"
+        />
+      </symbol>
+      <symbol id="wikipedia" viewBox="0 0 458.723 458.723" xml:space="preserve">
+        <path
+          class="icon--white"
+          d="M455.724,93.489H367.32h-3v3v9.613v3h3h6.143c7.145,0,13.588,3.667,17.237,9.81
+            c3.648,6.143,3.786,13.555,0.368,19.829l-98.3,180.432l-44.769-106.727l42.169-77.382c8.727-16.014,25.477-25.962,43.714-25.962
+            h1.992h3v-3v-9.613v-3h-3H247.47h-3v3v9.613v3h3h6.143c7.145,0,13.588,3.667,17.237,9.81c3.648,6.143,3.786,13.555,0.368,19.829
+            l-30.587,56.143L213.372,129.9c-1.976-4.71-1.487-9.852,1.341-14.105s7.38-6.693,12.488-6.693h6.988h3v-3v-9.613v-3h-3H128.46h-3v3
+            v9.613v3h3h1.454c20.857,0,39.546,12.428,47.615,31.661l40.277,96.018l-44.887,82.392L93.523,129.9
+            c-1.976-4.71-1.487-9.852,1.341-14.105s7.38-6.693,12.488-6.693h10.737h3v-3v-9.613v-3h-3H3H0v3v9.613v3h3h7.064
+            c20.857,0,39.547,12.428,47.615,31.661l91.526,218.191c1.601,3.816,5.313,6.282,9.458,6.282c3.804,0,7.163-1.998,8.986-5.344
+            l11.939-21.91l45.582-83.646l43.884,104.617c1.601,3.816,5.313,6.282,9.458,6.282c3.804,0,7.163-1.998,8.986-5.344l11.939-21.91
+            l110.58-202.919c8.727-16.014,25.477-25.962,43.714-25.962h1.992h3v-3v-9.613v-3h-2.999L455.724,93.489L455.724,93.489z"
+        />
+      </symbol>
+      <symbol id="thumb-up" viewBox="0 0 16 16">
+        <path
+          class="icon--white"
+          d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
+          transform="translate(0 5)"
+        />
+        <path
+          class="icon--white"
+          d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
+          transform="translate(5 .97)"
+        />
+      </symbol>
+      <symbol
+        id="thumb-down"
+        viewBox="0 0 24 24"
+        enable-background="new 0 0 24 24"
+      >
+        <path
+          class="icon--white"
+          d="m22.25 1h-2.5c-.965 0-1.75.785-1.75 1.75v11.5c0 .965.785 1.75 1.75 1.75h2.5c.965 0 1.75-.785 1.75-1.75v-11.5c0-.965-.785-1.75-1.75-1.75z"
+        />
+        <path
+          class="icon--white"
+          d="m5.119.75c-1.95 0-3.61 1.4-3.94 3.32l-1.12 6.5c-.42 2.45 1.46 4.68 3.94 4.68h4.72s-.75 1.5-.75 4c0 3 2.25 4 3.25 4s1.5-.5 1.5-3c0-2.376 2.301-4.288 3.781-5.273v-12.388c-1.601-.741-4.806-1.839-9.781-1.839z"
+        />
+      </symbol>
+      <symbol
+        id="close"
+        viewBox="0 0 512.001 512.001"
+        enable-background="new 0 0 512.001 512.001"
+      >
+        <path
+          d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+            L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+            c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+            l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+            L284.286,256.002z"
+        />
+      </symbol>
+    </svg>
   </body>
 </html>

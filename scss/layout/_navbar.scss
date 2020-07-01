@@ -1,7 +1,7 @@
 .nav-bar {
   z-index: 2;
   position: absolute;
-  min-width: 100%;
+  width: 100%;
   & * {
     color: white;
   }
@@ -26,36 +26,29 @@
   );
 
   &__container {
+    @extend .horizontal-margin;
+    padding: 33px 0;
+
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin: 5vh 7vw;
 
     &__logo {
-      font-size: 2em;
+      @extend .weight--regular;
+      font-size: 2rem;
       text-decoration: none;
-      font-weight: 400;
     }
+
     &__menu-item {
       display: inline;
       cursor: pointer;
       line-height: 20px;
-      &--right-menu {
-        flex-grow: 2;
-        ul {
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-        }
-      }
+      margin-left: 46px;
 
       &__link {
-        border: none;
         color: white;
         text-decoration: none;
-        &__icon {
-          fill: white;
-        }
-
+        line-height: 1.2;
         @include screen-size('phone') {
           display: none;
         }

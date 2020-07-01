@@ -8,9 +8,6 @@ html {
   margin: 0;
   box-sizing: border-box;
   height: 100%;
-}
-
-* {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: $black;
@@ -18,4 +15,23 @@ html {
 
 .icon--white {
   fill: white;
+}
+
+.weight {
+  &--bold {
+    font-weight: 600;
+  }
+  &--regular {
+    font-weight: 400;
+  }
+}
+
+.horizontal-margin {
+  margin-left: 133px;
+  margin-right: 123px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }

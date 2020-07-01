@@ -3,69 +3,67 @@
   background-image: url('../img/Pope.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  // background-position: center center;
 
   & * {
     color: white;
   }
   &__vote-card {
-    width: 39.2vw;
-
+    @extend .horizontal-margin;
+    width: 500px;
+    margin-top: 155px;
     z-index: 2;
     position: absolute;
-    margin-left: 10vw;
-    margin-top: 20vh;
 
     &__content {
-      height: 49.7vh;
-
       -webkit-backdrop-filter: blur(25px);
       backdrop-filter: blur(25px);
       background-color: rgb(0, 0, 0, 0.4);
 
-      padding: 12px 40px;
+      padding: 0 50px 15px 40px;
       font-weight: 300;
       &__title {
-        font-size: 1em;
-        margin-bottom: 0;
-      }
-      &__name {
-        font-size: 3.75em;
-        margin: 0;
-        font-weight: 400;
+        padding-top: 50px;
+        &--name {
+          font-size: 3.75rem;
+          font-weight: 400;
+        }
       }
       &__desc {
-        font-size: 1.3em;
+        font-size: 1.3rem;
+        line-height: 1.143;
       }
       &__more-info {
         & * {
           display: inline-block;
           vertical-align: middle;
-          font-size: 0.875em;
-          color: white;
+          font-size: 0.875rem;
+          line-height: 1.714;
         }
       }
       &__verdict {
-        line-height: 4;
-        font-size: 1.25em;
+        line-height: 1.2;
+        font-size: 1.25rem;
         font-weight: bold;
       }
     }
 
     &__thumbs-row {
-      display: flex;
-      flex-direction: row;
+      @extend .flex-row;
 
       &__thumb {
         width: 50%;
-        padding: 1.2em 0;
+        padding: 20px 0;
         text-align: center;
+
         cursor: pointer;
         &--up {
+          @extend .main-ruling__vote-card__thumbs-row__thumb;
           background-color: rgba(28, 187, 180, 0.902);
         }
         &--down {
-          background-color: rgba(255, 173, 29, 0.902); // height: 100%;
+          @extend .main-ruling__vote-card__thumbs-row__thumb;
+          background-color: rgba(255, 173, 29, 0.902);
         }
       }
     }
@@ -86,7 +84,7 @@
     &__right {
       width: 67%;
       background-color: rgba(255, 255, 255, 0.702);
-      font-size: 2em;
+      font-size: 2rem;
       line-height: 50px;
       color: $black;
       &--bold {
