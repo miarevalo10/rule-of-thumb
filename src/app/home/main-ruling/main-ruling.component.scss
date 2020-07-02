@@ -76,6 +76,11 @@
     border: none;
     cursor: pointer;
 
+    &:focus {
+      outline: 0;
+      outline: none;
+    }
+
     &--up {
       background-color: rgba(28, 187, 180, 0.902);
     }

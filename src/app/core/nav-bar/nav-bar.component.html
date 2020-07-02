@@ -1,14 +1,14 @@
 <nav class="nav-bar__container">
   <div>
-    <a class="nav-bar__logo" href="#" aria-label="Go to main page"
+    <a class="nav-bar__logo" routerLink="/" aria-label="Go to main page"
       >Rule of Thumb.</a
     >
   </div>
   <ul>
     <li class="nav-bar__menu-item">
       <a
+        routerLink="/past-trials"
         class="nav-bar__menu-item-link"
-        href="pages/past-trials.html"
         aria-label="Go to past trials"
         >Past trials</a
       >
@@ -16,7 +16,7 @@
     <li class="nav-bar__menu-item">
       <a
         class="nav-bar__menu-item-link"
-        href="pages/how-it-works.html"
+        routerLink="/how-it-works"
         aria-label="Go to how it works"
         >How It Works</a
       >
@@ -24,7 +24,7 @@
     <li class="nav-bar__menu-item">
       <a
         class="nav-bar__menu-item-link"
-        href="pages/login.html"
+        routerLink="/auth"
         aria-label="Go to how it works"
         >Log In / Sign Up</a
       >

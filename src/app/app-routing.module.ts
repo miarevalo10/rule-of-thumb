@@ -5,7 +5,23 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    loadChildren: './home/home.module#HomeModule',
+    data: { preload: true }
+  },
+  {
+    path: 'past-trials',
+    loadChildren: './past-trials/past-trials.module#PastTrialsModule',
+    data: { preload: true }
+  },
+  {
+    path: 'how-it-works',
+    loadChildren: './how-it-works/how-it-works.module#HowItWorksModule',
+    data: { preload: true }
+  },
+  {
+    path: 'auth',
+    loadChildren: './auth/auth.module#AuthModule',
+    data: { preload: true }
   }
 ];
 

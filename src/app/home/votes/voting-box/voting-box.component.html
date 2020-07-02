@@ -1,0 +1,105 @@
+<article
+  class="hero"
+  [ngStyle]="{ 'background-image': 'url(' + votingBox.imgUrl + ')' }"
+>
+  <div class="hero__container">
+    <div
+      class="hero__vote hero__vote--left-marker"
+      [ngClass]="{
+        'hero__vote--up': isRulingUp,
+        'hero__vote--down': !isRulingUp
+      }"
+    >
+      <svg height="18px" width="18px">
+        <use *ngIf="isRulingUp" xlink:href="#thumb-up"></use>
+        <use *ngIf="!isRulingUp" xlink:href="#thumb-down"></use>
+      </svg>
+    </div>
+    <div class="hero__content">
+      <h1 class="hero__big-title">
+        {{ votingBox.title }}
+      </h1>
+      <h2 class="no-margin-padding hero__small-subtitle">
+        {{ votingBox.time
+        }}<span class="weight--regular"> {{ votingBox.category }}</span>
+      </h2>
+      <p *ngIf="!isVoteAgain" class="hero__paragraph">
+        {{ votingBox.description }}
+      </p>
+      <p *ngIf="isVoteAgain" class="hero__paragraph">
+        Thank you for voting!
+      </p>
+      <div class="flex-row center-vertical">
+        <ng-container *ngIf="!isVoteAgain">
+          <button
+            class="hero__vote hero__vote--up"
+            [ngClass]="{ 'hero__vote--selected': isVoteUp }"
+            aria-label="Select thumb up"
+            (click)="isVoteUp = true"
+          >
+            <svg height="18px" width="18px">
+              <use xlink:href="#thumb-up"></use>
+            </svg>
+          </button>
+
+          <button
+            class="hero__vote hero__vote--down"
+            aria-label="Select thumb down"
+            [ngClass]="{ 'hero__vote--selected': !isVoteUp }"
+            (click)="isVoteUp = false"
+          >
+            <svg height="18px" width="18px">
+              <use xlink:href="#thumb-down"></use>
+            </svg>
+          </button>
+          <button class="hero__vote-btn" aria-label="Vote now" (click)="vote()">
+            Vote now
+          </button>
+        </ng-container>
+
+        <button
+          *ngIf="isVoteAgain"
+          class="hero__vote-btn"
+          aria-label="Vote now"
+          (click)="toggleVoteAgain()"
+        >
+          Vote again
+        </button>
+      </div>
+    </div>
+    <div class="flex-row">
+      <div
+        class="hero__vote-result hero__vote-result--up"
+        [ngStyle]="{
+          width: getPercentage(votingBox.votesUp) + '%'
+        }"
+      >
+        <svg height="28px" width="28px">
+          <use xlink:href="#thumb-up"></use>
+        </svg>
+        {{
+          getPercentage(
+            votingBox.votesUp,
+            votingBox.votesUp + votingBox.votesDown
+          )
+        }}%
+      </div>
+      <div
+        class="hero__vote-result hero__vote-result--down"
+        [ngStyle]="{
+          width: getPercentage(votingBox.votesDown) + '%'
+        }"
+      >
+        {{
+          getPercentage(
+            votingBox.votesDown,
+            votingBox.votesUp + votingBox.votesDown
+          )
+        }}%
+        <svg height="28px" width="28px">
+          <use xlink:href="#thumb-down"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</article>
