@@ -1,11 +1,20 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { VotesService } from '../votes.service';
 import { VotingBox } from '../voting-box.model';
+import { trigger, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-voting-box',
   templateUrl: './voting-box.component.html',
-  styleUrls: ['./voting-box.component.scss']
+  styleUrls: ['./voting-box.component.scss'],
+  animations: [
+    trigger('fadeInOut', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate(800, style({ opacity: 1 }))
+      ])
+    ])
+  ]
 })
 export class VotingBoxComponent implements OnInit {
   @Input() votingBox: VotingBox;

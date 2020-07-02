@@ -3,46 +3,46 @@ import { VotingBox } from './voting-box.model';
 export const initialData: VotingBox[] = [
   {
     id: 1,
-    imgUrl: 'assets/Kanye.png',
+    imgUrl: 'assets/Kanye.jpg',
     title: 'Kanye West',
     time: '1 month ago',
     category: 'in Entertainment',
     description:
       'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
-    votesUp: 6,
-    votesDown: 5
+    votesUp: 16,
+    votesDown: 9
   },
   {
     id: 2,
-    imgUrl: 'assets/Mark.png',
+    imgUrl: 'assets/Mark.jpg',
     title: 'Mark Zuckerberg',
     time: '1 month ago',
     category: 'in Business',
     description:
       'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
-    votesUp: 5,
-    votesDown: 6
+    votesUp: 9,
+    votesDown: 16
   },
   {
     id: 3,
-    imgUrl: 'assets/Cristina.png',
+    imgUrl: 'assets/Cristina.jpg',
     title: 'Cristina Fernández de Kirchner',
     time: '1 month ago',
     category: 'in Politics',
     description:
       'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
-    votesUp: 6,
-    votesDown: 5
+    votesUp: 9,
+    votesDown: 16
   },
   {
     id: 4,
-    imgUrl: 'assets/Malala.png',
+    imgUrl: 'assets/Malala.jpg',
     title: 'Malala Yousafzai',
     time: '1 month ago',
     category: 'in Entertainment',
     description:
       'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
-    votesUp: 6,
-    votesDown: 5
+    votesUp: 16,
+    votesDown: 9
   }
 ];

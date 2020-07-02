@@ -23,47 +23,45 @@
         {{ votingBox.time
         }}<span class="weight--regular"> {{ votingBox.category }}</span>
       </h2>
-      <p *ngIf="!isVoteAgain" class="hero__paragraph">
+      <p *ngIf="!isVoteAgain" class="hero__paragraph" [@fadeInOut]>
         {{ votingBox.description }}
       </p>
-      <p *ngIf="isVoteAgain" class="hero__paragraph">
+      <p *ngIf="isVoteAgain" class="hero__paragraph" [@fadeInOut]>
         Thank you for voting!
       </p>
-      <div class="flex-row center-vertical">
-        <ng-container *ngIf="!isVoteAgain">
-          <button
-            class="hero__vote hero__vote--up"
-            [ngClass]="{ 'hero__vote--selected': isVoteUp }"
-            aria-label="Select thumb up"
-            (click)="isVoteUp = true"
-          >
-            <svg height="18px" width="18px">
-              <use xlink:href="#thumb-up"></use>
-            </svg>
-          </button>
-
-          <button
-            class="hero__vote hero__vote--down"
-            aria-label="Select thumb down"
-            [ngClass]="{ 'hero__vote--selected': !isVoteUp }"
-            (click)="isVoteUp = false"
-          >
-            <svg height="18px" width="18px">
-              <use xlink:href="#thumb-down"></use>
-            </svg>
-          </button>
-          <button class="hero__vote-btn" aria-label="Vote now" (click)="vote()">
-            Vote now
-          </button>
-        </ng-container>
+      <button
+        *ngIf="isVoteAgain"
+        class="hero__vote-btn"
+        aria-label="Vote now"
+        (click)="toggleVoteAgain()"
+        [@fadeInOut]
+      >
+        Vote again
+      </button>
+      <div *ngIf="!isVoteAgain" class="flex-row center-vertical" [@fadeInOut]>
+        <button
+          class="hero__vote hero__vote--up"
+          [ngClass]="{ 'hero__vote--selected': isVoteUp }"
+          aria-label="Select thumb up"
+          (click)="isVoteUp = true"
+        >
+          <svg height="18px" width="18px">
+            <use xlink:href="#thumb-up"></use>
+          </svg>
+        </button>
 
         <button
-          *ngIf="isVoteAgain"
-          class="hero__vote-btn"
-          aria-label="Vote now"
-          (click)="toggleVoteAgain()"
+          class="hero__vote hero__vote--down"
+          aria-label="Select thumb down"
+          [ngClass]="{ 'hero__vote--selected': !isVoteUp }"
+          (click)="isVoteUp = false"
         >
-          Vote again
+          <svg height="18px" width="18px">
+            <use xlink:href="#thumb-down"></use>
+          </svg>
+        </button>
+        <button class="hero__vote-btn" aria-label="Vote now" (click)="vote()">
+          Vote now
         </button>
       </div>
     </div>
@@ -89,6 +87,7 @@
         [ngStyle]="{
           width: getPercentage(votingBox.votesDown) + '%'
         }"
+        [@fadeInOut]
       >
         {{
           getPercentage(
