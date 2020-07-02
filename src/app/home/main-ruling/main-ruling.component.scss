@@ -19,7 +19,6 @@
   margin-top: 155px;
 
   @include screen-size('phone') {
-    width: 420px;
     margin-top: 120px;
   }
 
@@ -34,6 +33,8 @@
     font-weight: 300;
     @include screen-size('phone') {
       padding-right: 18px;
+      width: 100%;
+      margin-right: 28px;
     }
   }
 
@@ -75,11 +76,6 @@
     text-align: center;
     border: none;
     cursor: pointer;
-
-    &:focus {
-      outline: 0;
-      outline: none;
-    }
 
     &--up {
       background-color: rgba(28, 187, 180, 0.902);

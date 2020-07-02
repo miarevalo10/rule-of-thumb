@@ -22,10 +22,6 @@
     margin-left: 50px;
     margin-right: 50px;
   }
-  // @include screen-size('laptop') {
-  //   margin-left: 110px;
-  //   margin-right: 100px;
-  // }
 }
 
 .flex-row {
@@ -56,4 +52,9 @@
 .main-container {
   height: 100vh;
   margin-top: 150px;
+}
+
+button:focus {
+  outline: 0;
+  outline: none;
 }

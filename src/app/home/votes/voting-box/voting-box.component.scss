@@ -47,11 +47,6 @@
     cursor: pointer;
     border: none;
 
-    &:focus {
-      outline: 0;
-      outline: none;
-    }
-
     &--left-marker {
       position: absolute;
       bottom: 220px;
@@ -125,9 +120,5 @@
     color: white;
     cursor: pointer;
     font-size: 0.875rem;
-    &:focus {
-      outline: 0;
-      outline: none;
-    }
   }
 }

@@ -42,12 +42,7 @@
       text-decoration: none;
       line-height: 1.2;
     }
-    @include screen-size('phone') {
-      display: none;
-    }
-    @include screen-size('tablet') {
-      display: none;
-    }
+
     @include screen-size('laptop') {
       display: none;
     }
@@ -58,9 +53,6 @@
 
     display: none;
 
-    @include screen-size('phone') {
-      display: block;
-    }
     @include screen-size('tablet') {
       display: block;
     }
