@@ -12,7 +12,7 @@ For the layout part in the branch [layout-html-css](https://github.com/miarevalo
 
 # Interaction-JS
 
-For the layout part in the branch [interaction-js](https://github.com/miarevalo10/rule-of-thumb/tree/interaction-js) I used the following tools:
+For the interaction part in the branch [interaction-js](https://github.com/miarevalo10/rule-of-thumb/tree/interaction-js) I used the following tools:
 
 - [Angular8](https://angular.io/), the js framework to interact with the html
 - [Dexie](https://dexie.org/) a wrapper to IndexedDB to keep the state of the votes data
